@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrap">
+		<form action="https://fom.in.ua/echo" method="get">
+			<fieldset>
+				<legend>Регистрация</legend>
+				<p>
+					<label>
+						Ваше имя: *
+						<input type="text" name="login" required>
+					</label>
+				</p>
+
+				<p>
+					<label>
+						Телефон: *
+						<input type="tel" name="phone" required>
+					</label>
+				</p>
+				<p>
+					<label>
+						E-mail: *
+						<input type="email" name="email" required>
+					</label>
+				</p>
+				<p>
+					<label>
+						Пароль: *
+						<input type="password" name="password" required>
+					</label>
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>Подбор рейса</legend>
+				<p>
+					<label>
+						<select name="from">
+							<optgroup label="Украина">
+								<option value="kyiv">Киев</option>
+								<option value="lviv">Львов</option>
+								<option value="odessa">Одесса</option>
+							</optgroup>
+							<optgroup label="Польша">
+								<option value="warsaw">Варшава</option>
+								<option value="krakov">Краков</option>
+								<option value="sopot">Сопот</option>
+							</optgroup>
+						</select>
+					</label>
+				</p>
+				<p>
+					<label>
+						<select name="to">
+							<optgroup label="Украина">
+								<option value="kyiv">Киев</option>
+								<option value="lviv">Львов</option>
+								<option value="odessa">Одесса</option>
+							</optgroup>
+							<optgroup label="Польша">
+								<option value="warsaw">Варшава</option>
+								<option value="krakov">Краков</option>
+								<option value="sopot">Сопот</option>
+							</optgroup>
+						</select>
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="date" name="date_from">
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="date" name="date_to">
+					</label>
+				</p>
+				<p>
+					К-во билетов: 
+					<label>
+						<input type="number" name="num_tickets" value="1">
+					</label>
+				</p>
+
+				<div><b>Дети</b></div>
+
+				<p>
+					<label>
+						<input type="radio" name="child" value="without" checked> Без детей
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="radio" name="child" value="one"> 1 ребёнок
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="radio" name="child" value="two"> 2 ребёнка
+					</label>
+				</p>
+
+				<div><b>Комфорт</b></div>
+
+				<p>
+					<label>
+						<input type="checkbox" name="space"> Больше места для ног
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="checkbox" name="food"> Питание
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="checkbox" name="bags" checked> Больше места для багажа
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="checkbox" name="window"> Место у окна
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="checkbox" name="row"> Место в первом ряду
+					</label>
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>Информация по страховке</legend>
+				<p>
+					<label>
+						<input type="checkbox" name="insurance" checked> Мне нужна страховка
+					</label>
+				</p>
+				<p><b>Загрузите копию паспорта</b></p>
+				<p>
+					<label>
+						<input type="file" name="passport" required>
+					</label>
+				</p>
+
+				<textarea name="additional" cols="30" rows="10" placeholder="Дополнительная информация"></textarea>
+			</fieldset>
+
+			<input type="submit" value="Отправить">
+			<input type="reset" value="Очистить">
+		</form>
+	</div>
+</body>
+
+</html>
